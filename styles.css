@@ -1,3 +1,11 @@
+/* Olá, como não haviam instruções de como deveria ser reproduzido o Lay-out,
+a primeira coisa que veio na minha mente foi fazer ele animado, claro que se 
+não for o caso é muito simples deixar ele estático, basta por a classe ".cardtop"
+no #card2, e deletar o scripts.js. De qualquer forma segue minha ideia para o projeto, 
+sou iniciante ainda, mas quando me proponho a fazer algo tento fazer o melhor que posso
+e foi o que tentei neste caso, espero que gostem!
+
+
 /*---------------Geral----------------*/
 
 body{
@@ -7,9 +15,9 @@ body{
 .card{
 	transition: all 0.2s ease;	
 	width: 20rem;
-	height: 36rem;
+	height: 32rem;
 	box-shadow: 0px 10px 15px #C5CECF;
-	top: -67.5rem;
+	top: -67rem;
 	font-family: Calibri;
 	text-align: center;
 	line-height: 105%;				
@@ -19,7 +27,7 @@ body{
 
 .verde{	
 	background-color: #a5dacd;
-	height: 360px;	
+	height: 330px;	
 }
 
 .branco{
@@ -31,14 +39,14 @@ body{
 
 .card h5{
 	color: #567495;
-	font-weight: 520;
-	font-size: 1.4rem;
+	font-weight: 400;
+	font-size: 1.2rem;
 	opacity: 0.9;
 }
 
 .cardtop h5{
-	font-weight: 530;
-	font-size: 1.5rem;	
+	font-weight: 500;
+	font-size: 1.3rem;	
 }
 
 .card p{
@@ -55,6 +63,11 @@ body{
 
 .card .card-title{
 	margin-bottom: 2rem;
+}
+
+.card-deck .card-body{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .card .card-header{
@@ -98,7 +111,7 @@ body{
 
 #card1{	
 	margin: 0 auto;
-	left: 2.5rem;
+	
 }
 
 #card2{	
@@ -107,19 +120,18 @@ body{
 }
 
 #card3{		
-	margin: 0 auto;
-	right: 2.5rem;	
+	margin: 0 auto;	
 }
 
 .cardtop{	
   	z-index: 2;
-  	width: 23rem;
-  	height: 40rem;
-  	top: -69.5rem;
+  	width: 22rem;
+  	height: 35rem;
+  	top: -68.5rem;
 }
 
 #card-sm-1{
-	top: -69.50rem;	
+	top: -69.5rem;	
 }
 
 #card-sm-2{
@@ -136,14 +148,15 @@ body{
 	z-index: 1;
 }
 
+/*------Lay-Out dos cards horizontais-----*/
+
 .card-sm{
 	height: 365px;	
 }
 
 .card-sm .card-img-top{
 	position: relative;
-	top: -40px;
-	left: 80px;
+	left: 100px;
 }
 
 .card-sm .pontos{
@@ -151,25 +164,54 @@ body{
 	top: 5px;	
 }
 
+.card-sm .card-header{
+	padding-right: 0px;
+	padding-top: 4px;
+}
+
+.card-sm .card-title{
+	padding-top: 10px;
+}
+
+
+/*------Media Queries-----*/
+
+@media only screen and (min-width: 1080px){
+	.card-deck{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.card h5{
+		font-size: 1.3rem;		
+	}
+
+	.cardtop h5{
+		font-size: 1.5rem;	
+	}
+
+	.card p{
+		font-size: 1rem;		
+	}
+
+	.cardtop p{
+		font-size: 1.1rem;	
+	}
+}
 
 /*smart size*/
 @media only screen and (max-width : 440px){
 	.card-sm .card-img-top{
-		width: 130px;
-		height: 130px;
+		width: 140px;
+		height: 140px;
 		top: 120px;
+		left: 0px;
 	}
 
 	.card-sm .pontos{
 		position: relative;
 		top: 120px;	
-	}
-
-	.card-sm .card-header{
-		padding-right: 0px;
-		padding-top: 5px;
-	}
-   
+	}   
 }
 
 
