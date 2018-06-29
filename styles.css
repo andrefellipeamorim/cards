@@ -1,56 +1,113 @@
 body{
-	overflow: hidden;
+	overflow: hidden;		
 }
 
+.card h5{
+	color: #567495;
+	font-weight: 520;
+	font-size: 1.4rem;
+	opacity: 0.9;
+}
 
+.cardtop h5{
+	font-weight: 530;
+	font-size: 1.5rem;	
+}
+
+.card p{
+	color: #C5CECF;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.cardtop p{
+	font-size: 1rem;	
+}
+
+.card .card-title{
+	margin-bottom: 2rem;
+}
 
 .verde{	
 	background-color: #a5dacd;
-	height: 330px;	
+	height: 360px;	
 }
 
 .branco{
 	background-color: #fbfcfd;
-	height: 400px
+	height: 800px
 }
 
+.card .card-header{
+	background-color: white;
+	border-color: white;
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 30px;		
+}
+
+
 .card-img-top{
-	max-height: 200px;
-	max-width: 200px;
+	max-height: 220px;
+	max-width: 220px;
 	margin: 0 auto;
 }
 
+.cardtop .card-img-top{
+	margin-bottom: 1rem;
+	max-height: 230px;
+	max-width: 230px;
+}
+
+
 .card{
-	transition: all 0.1s ease;	
-	width: 18rem;
-	height: 32rem;
-	box-shadow: 0px 10px 15px grey;
-	top: -680px;	
+	transition: all 0.2s ease;	
+	width: 20rem;
+	height: 36rem;
+	box-shadow: 0px 10px 15px #C5CECF;
+	top: -67.5rem;
+	font-family: Tahoma;				
 }
 
 #card1{	
 	margin: 0 auto;
-	left: 100px;
+	left: 2.5rem;
 }
 
 #card2{	
 	margin: 0 auto;
-	z-index: 1;
+	z-index: 1;		
 }
 
 #card3{		
 	margin: 0 auto;
-	right: 100px;	
+	right: 2.5rem;	
 }
 
 .cardtop{	
   	z-index: 2;
-  	width: 20rem;
-  	height: 34rem;
-  	top: -698px;
+  	width: 23rem;
+  	height: 40rem;
+  	top: -69.5rem;
 }
 
 .alinhacards{
 	text-align: center;	
+}
+
+.card .card-footer{
+	background-color: white;
+	border-color: white;
+	margin-bottom: 1.7rem;
+}
+
+.pontos{
+	color: #C5CECF;
+	font-size: 1.5rem;
+	letter-spacing: 0.45rem;
+}
+
+.pontoazul{
+	color: #567495;
 }
 

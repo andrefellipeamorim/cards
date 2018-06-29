@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -29,37 +30,50 @@
     
     <div class="container alinhacards">
       <div class="row col-12">
-        <div id="card1" class="card-fluid card">
-          <img class="card-img-top" src="imagem.png" alt="Card image cap">
+        <div id="card1" class="card">
+          <div class="card-header">
+            <img src="setas.png">
+          </div>
+          <img class="card-img-top" src="cofre.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Is The Product Safe?</h5>
+            <p class="card-text">It's so protected that even<br>our team has no access to<br>your payment data.</p><!--Tomei a liberdade de fazer uma pequena alteração no texto ("no" e "any" ficaria meio redundante e incorreto ao meu ver)-->            
+          </div>
+          <div class="card-footer">
+            <span class="pontos"><span class="pontoazul">•</span> • •</span>
           </div>
         </div>
 
-        <div id="card2" class="card-fluid card">
-          <img class="card-img-top" src="imagem.png" alt="Card image cap">
+        <div id="card2" class="card">
+          <div class="card-header">
+            <img src="setas.png">
+          </div>
+          <img class="card-img-top" src="cartao.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Do You Bill My Card?</h5>
+            <p class="card-text">We will never bill your card.<br>Seriously. We earn money<br>from services, not from users.</p>            
+          </div>
+          <div class="card-footer">
+            <span class="pontos">• <span class="pontoazul">•</span> •</span>
           </div>
         </div>
 
-        <div id="card3" class="card-fluid card">
-          <img class="card-img-top" src="imagem.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="card3" class="card">
+          <div class="card-header">
+            <img src="setas.png">
           </div>
-        </div>
+          <img class="card-img-top" src="escudo.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">What Happens To My Data?</h5>
+            <p class="card-text">You provide your data to our<br>robot without human interaction.<br>Then it shows stats to you.</p>            
+          </div>
+          <div class="card-footer">
+            <span class="pontos">• • <span class="pontoazul">•</span></span>
+          </div>          
+        </div>        
       </div>      
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+
   </body>
 </html>
