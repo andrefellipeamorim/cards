@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.card').mouseover(function(){
 		var id = this.id;		
-		$('#'+id).addClass('cardtop');
+		$('#'+id).addClass('cardtop');		
 	});
 
 	$('.card').mouseout(function(){
@@ -15,7 +15,14 @@ $(document).ready(function(){
 
 	$('.fundo').mouseout(function(){
 		$('#card2').removeClass('cardtop');
+	});	
+
+	$('#card-sm-1').mouseover(function(){
+		$('#card-sm-2').addClass('cardmid');
 	});
-	
+
+	$('#card-sm-1').mouseout(function(){
+		$('#card-sm-2').removeClass('cardmid');		
+	});
 });
 

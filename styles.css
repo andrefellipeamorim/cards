@@ -1,6 +1,33 @@
+/*---------------Geral----------------*/
+
 body{
-	overflow: hidden;		
+	overflow: hidden; 	
 }
+
+.card{
+	transition: all 0.2s ease;	
+	width: 20rem;
+	height: 36rem;
+	box-shadow: 0px 10px 15px #C5CECF;
+	top: -67.5rem;
+	font-family: Calibri;
+	text-align: center;
+	line-height: 105%;				
+}
+
+/*-------------Background--------------*/
+
+.verde{	
+	background-color: #a5dacd;
+	height: 360px;	
+}
+
+.branco{
+	background-color: #fbfcfd;
+	height: 800px
+}
+
+/*-------------Tipografia--------------*/
 
 .card h5{
 	color: #567495;
@@ -16,26 +43,18 @@ body{
 
 .card p{
 	color: #C5CECF;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
 .cardtop p{
-	font-size: 1rem;	
+	font-size: 1.1rem;	
 }
+
+/*--------------Lay-Out---------------*/
 
 .card .card-title{
 	margin-bottom: 2rem;
-}
-
-.verde{	
-	background-color: #a5dacd;
-	height: 360px;	
-}
-
-.branco{
-	background-color: #fbfcfd;
-	height: 800px
 }
 
 .card .card-header{
@@ -45,7 +64,6 @@ body{
 	padding-right: 30px;
 	padding-top: 30px;		
 }
-
 
 .card-img-top{
 	max-height: 220px;
@@ -59,15 +77,24 @@ body{
 	max-width: 230px;
 }
 
-
-.card{
-	transition: all 0.2s ease;	
-	width: 20rem;
-	height: 36rem;
-	box-shadow: 0px 10px 15px #C5CECF;
-	top: -67.5rem;
-	font-family: Tahoma;				
+.card .card-footer{
+	background-color: white;
+	border-color: white;
+	margin-bottom: 1.7rem;
 }
+
+.pontos{
+	color: #C5CECF;
+	font-size: 1.5rem;
+	letter-spacing: 0.45rem;
+}
+
+.pontoazul{
+	color: #567495;
+}
+
+/*-------------Mecânica--------------*/
+
 
 #card1{	
 	margin: 0 auto;
@@ -91,23 +118,58 @@ body{
   	top: -69.5rem;
 }
 
-.alinhacards{
-	text-align: center;	
+#card-sm-1{
+	top: -69.50rem;	
 }
 
-.card .card-footer{
-	background-color: white;
-	border-color: white;
-	margin-bottom: 1.7rem;
+#card-sm-2{
+	top: -88.5rem;
+	
 }
 
-.pontos{
-	color: #C5CECF;
-	font-size: 1.5rem;
-	letter-spacing: 0.45rem;
+#card-sm-3{
+	top: -107.5rem;
+	
 }
 
-.pontoazul{
-	color: #567495;
+.cardmid{
+	z-index: 1;
 }
+
+.card-sm{
+	height: 365px;	
+}
+
+.card-sm .card-img-top{
+	position: relative;
+	top: -40px;
+	left: 80px;
+}
+
+.card-sm .pontos{
+	position: relative;
+	top: 5px;	
+}
+
+
+/*smart size*/
+@media only screen and (max-width : 440px){
+	.card-sm .card-img-top{
+		width: 130px;
+		height: 130px;
+		top: 120px;
+	}
+
+	.card-sm .pontos{
+		position: relative;
+		top: 120px;	
+	}
+
+	.card-sm .card-header{
+		padding-right: 0px;
+		padding-top: 5px;
+	}
+   
+}
+
 
